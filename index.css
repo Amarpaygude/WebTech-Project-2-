@@ -1,36 +1,70 @@
-body {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+        background-color: rgb(55, 54, 54);
+    }
+    #heading{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: sans-serif;
-    background-color: rgb(55, 54, 54);
-}
+    margin-top: -400px;
+    margin-right: -320px;
+    color: whitesmoke;
+    }
+    #heading p{
+        font-size: medium;
+    }
+    #game {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-gap: 10px;
+    }
 
-#game {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-gap: 10px;
-}
+    .card {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+    }
+    #message {
+        display: none;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    #message a {
+        color: lightblue;
+        text-decoration: none;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    #message a:hover {
+        text-decoration: underline;
+    }
+    #guide{
+        color: aliceblue;
+        margin-right: -490px;
+        padding: 20px;
+        font-size: 18px;
+    }
 
-.card {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    color: white;
-}
+    .flipped {
+        background-color: red;
+        transform:rotateY(360deg);
+        transition-duration: 0.5s;
+    }
+    .matched {
+        background-color: limegreen;
+    }
 
-.card.flipped {
-    background-color: green;
-}
-
-.card.matched {
-    background-color: limegreen;
-}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <h1 id="heading">MEMORY GAME</h1>
     <div id="game">
         <div class="card" number="1"></div>
         <div class="card" number="2"></div>
@@ -19,10 +20,13 @@
         <div class="card" number="3"></div>
         <div class="card" number="7"></div>
         <div class="card" number="5"></div>
-        <div class="card" number="7"></div>
+        <div class="card" number="7"></div>`
     </div>
-    <button style="border-radius: 20px;margin-left: 20px"><a style="text-decoration: none;" href="./index.html">Refresh Game</a></button>
-
+    <div id="message"></div>
+    <div id="guide">1. Click on a card to reveal its number. <br>
+        2. If two revealed cards match, they remain flipped and are marked as matched. <br>
+        3. If they don't match, the cards are flipped back over.<br>4. The pairs are visible for 1 <br> <br>
+        Attempts to complete the Game = 3.</div>
     <script src="index.js"></script>
 </body>
 </html>
